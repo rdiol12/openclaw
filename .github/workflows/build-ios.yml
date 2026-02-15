@@ -25,8 +25,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Install xcodegen
-        run: brew install xcodegen
+      - name: Install xcodegen, swiftlint, swiftformat
+        run: brew install xcodegen swiftlint swiftformat
 
       - name: Select Xcode 26
         run: sudo xcode-select -s /Applications/Xcode_26.2.app/Contents/Developer
